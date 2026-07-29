@@ -1,0 +1,20 @@
+body {
+  background: #f4f6f9;
+}
+
+.card {
+  border-radius: 12px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+button {
+  border-radius: 8px !important;
+}
