@@ -1,0 +1,68 @@
+body{
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+.dashboard{
+
+height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+background:#f5f7fa;
+
+}
+
+.dashboard h1{
+
+font-size:40px;
+
+margin-bottom:20px;
+
+}
+
+.dashboard h2{
+
+margin:10px;
+
+}
+
+.dashboard h3{
+
+margin:10px;
+
+color:#555;
+
+}
+
+.dashboard button{
+
+margin-top:25px;
+
+padding:12px 30px;
+
+border:none;
+
+background:#ff4d4d;
+
+color:white;
+
+font-size:18px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}
+
+.dashboard button:hover{
+
+background:#d93636;
+
+}
