@@ -1,0 +1,25 @@
+{
+  "info": {
+    "name": "8th exp - Kafka",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1. Status",
+      "request": { "method": "GET", "header": [], "url": { "raw": "http://localhost:3000/api/status", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "status"] } }
+    },
+    {
+      "name": "2. Produce message",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n  \"key\": \"user-42\",\n  \"message\": \"Hello from Thunder Client\"\n}" },
+        "url": { "raw": "http://localhost:3000/api/produce", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "produce"] }
+      }
+    },
+    {
+      "name": "3. Consumed messages (history)",
+      "request": { "method": "GET", "header": [], "url": { "raw": "http://localhost:3000/api/history", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "history"] } }
+    }
+  ]
+}

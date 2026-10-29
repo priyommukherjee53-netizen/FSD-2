@@ -1,0 +1,42 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Install backend packages",
+      "type": "shell",
+      "command": "npm install",
+      "options": {
+        "cwd": "${workspaceFolder}/backend"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Start app",
+      "type": "shell",
+      "command": "npm start",
+      "options": {
+        "cwd": "${workspaceFolder}/backend"
+      },
+      "dependsOn": "Install backend packages",
+      "problemMatcher": []
+    },
+    {
+      "label": "Docker: build and run everything",
+      "type": "shell",
+      "command": "docker compose up --build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Docker: start only Kafka",
+      "type": "shell",
+      "command": "docker compose up -d kafka",
+      "problemMatcher": []
+    },
+    {
+      "label": "Docker: stop all",
+      "type": "shell",
+      "command": "docker compose down",
+      "problemMatcher": []
+    }
+  ]
+}
