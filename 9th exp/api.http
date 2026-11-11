@@ -1,0 +1,22 @@
+### Needs the "REST Client" extension. Start the app first.
+
+### Create a product
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{ "name": "Laptop", "price": 999.99 }
+
+### List products
+GET http://localhost:8080/api/products
+
+### Get one product
+GET http://localhost:8080/api/products/1
+
+### Discounted price
+GET http://localhost:8080/api/products/1/discounted?percent=10
+
+### Which version answered? (stable or canary)
+GET http://localhost:8080/api/version
+
+### Health
+GET http://localhost:8080/actuator/health
